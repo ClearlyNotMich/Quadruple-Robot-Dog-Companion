@@ -20,7 +20,7 @@ There is no ROS package/launch configuration, C++ implementation, dependency loc
 Use Python 3.10 or newer. The checks below use only the standard library and simulated devices; they do not open a serial port, camera or microphone.
 
 ```bash
-git clone https://github.com/ObviouslyNotMich/Quadruple-Robot-Dog-Companion.git
+git clone https://github.com/ClearlyNotMich/Quadruple-Robot-Dog-Companion.git
 cd Quadruple-Robot-Dog-Companion
 python -B -m unittest discover -s tests -v
 python -m src.controllers.mapping_test --help
