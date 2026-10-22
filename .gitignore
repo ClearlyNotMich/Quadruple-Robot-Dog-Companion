@@ -1,3 +1,13 @@
 # Logs
 logs/
 *.log
+
+# Local Python environments and generated caches.
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Excluded unused audio artifact; historical copies remain in Git history.
+/data/audio/stream_.mp3
