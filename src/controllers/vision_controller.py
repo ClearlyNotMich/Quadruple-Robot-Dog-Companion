@@ -1,10 +1,8 @@
-from controllers.logging_controller import LoggingController
+"""Placeholder for a future vision controller; no camera is opened."""
 
 
-logger = LoggingController()
-
-# Merge and implement Manars depth camera code logic
+# Original integration note: merge and implement Manar's depth-camera code.
+# That implementation is not included in this repository snapshot.
 class VisionController:
-
-   def __init__(self) -> None:
+    def __init__(self) -> None:
         pass

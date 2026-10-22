@@ -1,23 +1,20 @@
-import time
-from controllers import AI_controller, slam_controller, motion_controller, speech_to_text_controller, text_to_speech_controller, vision_controller
+"""Unfinished robot orchestration scaffold, retained for project context."""
 
-from controllers.logging_controller import LoggingController
+from .controllers.logging_controller import LoggingController
+from .controllers.speech_to_text_controller import SpeechToTextController
 
-logger = LoggingController()
 
-#TODO: code logic. This the main launch file that will boot the robot dog. 
 class RobotBoi:
-    def __init__(self):
-        self.mode = None # Something we can set here 
-        self.speech = speech_to_text_controller.SpeechToTextController(session=self.session)
-        
+    """Hold prototype components without claiming an implemented robot loop."""
+
+    def __init__(self, logger=None):
+        self.mode = None
+        self.logger = logger if logger is not None else LoggingController()
+        self.speech = SpeechToTextController(session=self)
 
     def launch(self):
-        print("Launch time: " + time.time())
-        # TODO Implement logic
-        try:
-            # TODO Implement error catch
-            pass
-        except Exception as e:
-            logger.log_error(f"An error occurred: {e}")
-
+        """Fail explicitly until the robot orchestration is implemented."""
+        raise NotImplementedError(
+            "Robot orchestration is not implemented in this prototype. "
+            "The standalone mapping example is documented in README.md."
+        )
